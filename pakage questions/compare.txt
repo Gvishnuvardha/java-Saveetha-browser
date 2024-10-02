@@ -1,0 +1,24 @@
+Write a Java program to compare two strings lexicographically.
+
+
+public class R192211396
+{
+  public static void main(String[] args)
+  {
+    String s1="apple";
+    String s2="banana";
+    int result=s1.compareTo(s2);
+    if(result>0)
+    {
+      System.out.print(s1+" is lexicographically greater than "+s2);
+    }
+    else if(result<0)
+    {
+      System.out.print(s1+" is lexicographically lesser than "+s2);
+    }
+    else
+    {
+      System.out.print(s1+" is lexicographically equal to "+s2);
+    }
+  }
+}

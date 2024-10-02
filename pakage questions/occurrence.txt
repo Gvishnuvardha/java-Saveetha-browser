@@ -1,0 +1,23 @@
+ Write a Java program to count the number of occurrences of a given character in a string.
+
+
+
+public class R192211396
+{
+  public static void main(String[] args)
+  {
+    String s="madam";
+    char c='a';
+    int len=s.length();
+    int i,count=0;
+    for(i=0;i<len;i++)
+    {
+      if(s.charAt(i)==c)
+      {
+        count++;
+      }
+    }
+    System.out.print("no of occurences is "+count);
+    
+  }
+}

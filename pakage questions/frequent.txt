@@ -1,0 +1,37 @@
+Write a Java program to find the most frequent word in a given string.
+
+
+
+import java.util.Arrays;
+public class R192211396
+{
+  public static void main(String [] arg)
+  {
+    String s=" boy sai ram is a good boy a man boy";
+    String str[]=s.split(" ");
+    Arrays.sort(str);
+    System.out.println(Arrays.toString(str));
+    int max=0;
+    int count=1;
+    String word=str[0];
+    String current=str[0];
+    for(int i=1;i<str.length;i++)
+    {
+      if(str[i].equals(current))
+      {
+        count++;
+      }
+      else
+      {
+        count=1;
+        current=str[i];
+      }
+      if(max<count)
+      {
+        max=count;
+        word=str[i];
+      }
+    }
+    System.out.println("most frequent word is:"+word);
+  }
+}

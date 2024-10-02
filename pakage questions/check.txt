@@ -1,0 +1,28 @@
+Write a Java program to check if a given string contains only digits.
+
+
+
+public class R192211396
+{
+public static void main(String[] arg)
+{
+String s="12345";
+char let[]=s.toCharArray();
+int len=let.length;
+boolean chect=true;
+for(int i=0;i<len;i++)
+{
+if(let[i]<48||let[i]>57)
+chect=false;
+break;
+}
+if(chect)
+{
+System.out.println("the string contains only digits");
+}
+else
+{
+System.out.println("not contains any digits");
+}
+}
+}

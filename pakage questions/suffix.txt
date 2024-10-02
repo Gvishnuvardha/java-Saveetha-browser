@@ -1,0 +1,24 @@
+ Write a Java program to check if a given string ends with a specific suffix.
+
+import java.util.Scanner;
+
+public class R192211396
+{
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the string: ");
+        String str = scanner.nextLine();
+        System.out.println("Enter the suffix: ");
+        String suffix = scanner.nextLine();
+        boolean result=str.endsWith(suffix);
+      if(result)
+      {
+        System.out.println(str+" "+"ends with"+" "+suffix);
+      }
+      else
+        System.out.println("not ending");
+     scanner.close();
+    }
+}
+
